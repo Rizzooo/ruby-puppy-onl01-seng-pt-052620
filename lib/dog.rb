@@ -12,6 +12,8 @@ class Dog
     @@all
   end
   
+  def self.clear_all
+  
   def self.print_all
     @@all.each 
       puts name
