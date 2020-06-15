@@ -3,9 +3,13 @@ class Dog
   
   @@all = []
   
+  def save
+    @@all << self
+  end
+  
   def initialize(name)
     @name = name
-    @@all << self
+    save
   end
   
   def self.all
@@ -20,10 +24,6 @@ class Dog
     @@all.each do |x|
       puts x.name
     end
-  end
-  
-  def self.save
-    @@all << self
   end
 end
     
